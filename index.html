@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mobile first</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+
+    <nav class="main-nav">
+      <a href="index.html"><img class="logo" src="image/Logo-khaa.png" alt="Logo"></a>
+      
+      <ul class="nav-links">
+        <!-- Besøg os Menu -->
+        <li class="has-submenu"><a href="besoeg.os.html"></a></li>
+           <a href="besoeg.os.html"><strong>Besøg os</strong></a>
+          <!-- Besøg os Submenu -->
+          <ul class="submenu">
+            <li><a href="Under-ombygning.html">Events</a></li>
+            <li><a href="Under-ombygning.html">Rundvisninger</a></li>
+            <li><a href="Under-ombygning.html">Undervisning</a></li>
+            <li><a href="Under-ombygning.html">Kunsthal Aarhus skulpturpark</a></li>
+          </ul>
+        </li>
+        <!-- Udstillinger Menu -->
+        <li class="has-submenu">
+          <a href="udstillinger.html"><strong>Udstillinger</strong></a>
+          <!-- Udstillinger Submenu -->
+          <ul class="submenu">
+            <li><a href="Under-ombygning.html">Information</a></li>
+            <li><a href="udstillinger.html">Nuværende</a></li>
+            <li><a href="Under-ombygning.html">Kommende</a></li>
+          </ul>
+        </li>
+        <!-- Om os Menu -->
+        <li class="has-submenu">
+          <a href="Under-ombygning.html"><strong>Om os</strong></a>
+          <!-- Om os Submenu -->
+          <ul class="submenu">
+            <li><a href="Under-ombygning.html">Historie</a></li>
+            <li><a href="Under-ombygning.html">Samarbejder og projekter</a></li>
+          </ul>
+        </li>
+        <!-- Menu café -->
+        <li class="has-submenu">
+          <a href="Under-ombygning.html"><strong>Café</strong></a>
+          <ul class="submenu">
+            <li><a href="Under-ombygning.html">Menu</a></li>
+          </ul>
+          <!-- Menu kontakt -->
+        <li class="has-submenu">
+          <a href="presse.html"><strong>Kontakt</strong></a>
+          <ul class="submenu">
+            <li><a href="presse.html">Presse</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--- Burger menu m. linjer -->
+      <div class="burger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <hr>
+  <main>
+    
+    <!-- Video - forside -->
+    <video src="video/KUNSTHAL_AARHUS_lavoploesning.mp4" class="video" controls autoplay></video>
+    
+    <!-- Aktuelle udstillinger -->
+    <h1 class="overskrift_forside">Aktuelle udstillinger</h1>
+
+    <div class="image-container-forside">
+
+      <a href="udstillinger.html">
+        <img src ="image/aktuelleudstillinger1.png" alt="udstillingsbillede" id="udstillingsbillede_sort"></a>
+      <a href="udstillinger.html">
+        <img src="image/aktuelleudstillinger2.png" alt="udstillingsbillede" id="udstillingsbillede_lilla">
+      </a>
+    </div>
+  </main>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <hr class="footer__hr">
+    
+    <div class="footer__sections container">
+      <div class="footer__section">
+        <span class="footer__title">Åbningstider</span>
+        <a href="#" class="footer__link">
+          <strong>Mandag:</strong> Lukket
+          <br> <strong>Tirsdag:</strong> 11-18
+          <br> <strong>Onsdag:</strong> 11-18
+          <br> <strong>Torsdag:</strong> 11-20
+          <br> <strong>Fredag:</strong> 11-18
+          <br> <strong>Lørdag:</strong> 11-18
+          <br> <strong>Søndag</strong> 11-18
+        </a>
+      </div>
+
+      <div class="footer__section">
+        <span class="footer__title">Adresse</span>
+        <a href="https://www.google.com/maps/place/J.+M.+M%C3%B8rks+Gade,+8000+Aarhus/@56.1550822,10.2028535,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f93afae5a51:0x7ace49f98fbbadb9!8m2!3d56.1550822!4d10.2028535!16s%2Fg%2F1tfpyfzy?entry=ttu"
+          target="_blank" class="footer__link">J.M Mørks Gade <br> 8000 Aarhus C</a>
+        <a href="#" class="footer__link"><strong>Email:</strong> Info@kunsthal.dk</a>
+        <a href="#" class="footer__link"><strong>Tlf. café:</strong> +45 86 20 60 50</a>
+        <a href="#" class="footer__link"><strong>Tlf. presse:</strong> +45 41 49 90 74</a>
+
+      </div>
+
+      <div class="footer__section">
+        <span class="footer__title">Sociale medier</span>
+        <a href="https://www.instagram.com/kunsthalaarhus/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/kunsthalaarhus" target="_blank" class="fa fa-facebook"></a> <br>
+        <a href="https://vimeo.com/user16006879" target="_blank" class="fa fa-vimeo"></a>
+        <a href="https://dk.linkedin.com/company/kunsthal-aarhus" target="_blank" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>

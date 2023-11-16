@@ -1,0 +1,627 @@
+/* START CSS reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D3D3D3;
+}
+/* SLUT CSS RESET */
+
+/* START style body */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* SLUT style body */
+
+/* START style menu/navbar */
+.main-nav {
+  z-index: 2;
+  display: flex;
+  height: 8vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  color: #000000;
+  background: #D3D3D3;
+  font-size: x-large;
+  position: relative;
+}
+
+.main {
+  overflow: hidden;
+  min-height: 100vh;
+  }
+  
+.logo {
+  height: auto;
+  max-width: 60%;
+}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.burger {
+  display: none;
+  padding: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.line {
+  height: 0.15em;
+  width: 1.5em;
+  margin: 0.5rem 0;
+  background: black;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  color: #000000;
+  padding: 10px;
+  list-style: none;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li:hover {
+  margin: 5px 0;
+  color: #3127C6;
+}
+
+.has-submenu:hover {
+  color: #3127C6;
+}
+
+hr {
+  margin-top: 80px;
+}
+/* SLUT style menu/navbar */
+
+
+/* --- START FORSIDE --- */
+
+/*Style for video*/
+video {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+/*Style for video SLUT*/
+
+.overskrift_forside {
+  padding: 5%;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #000000;
+}
+
+#udstillingsbillede_sort{
+max-width: 100%;
+}
+
+#udstillingsbillede_lilla{
+max-width: 100%;
+}
+/* --- SLUT FORSIDE --- */
+
+
+/* ---- START underside BESØG OS ---- */
+/* opdelingslinje til underside besøg os */
+.split-line {
+  border: 1px solid black; 
+  margin: 20px 0; 
+  min-width: 100%;
+}
+
+.overskrift_besøg_os {
+  margin-top: 20%;
+  font-size: 3em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Style for h2*/
+.h2-besog{
+  margin-left: 5%;
+  
+}
+
+
+/*Style for artikel bokse*/
+  .box {
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-bottom: 2%;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box; 
+  }
+
+  /*Style billede tekst*/
+  #fredag {
+    margin-left: 3.5%;
+    margin-bottom: 2%;
+  }
+
+  #torsdag{
+    margin-left: 3.5%;
+    margin-bottom: 2%;
+  }
+
+  #onsdag_6{
+    margin-left: 3.5%;
+    margin-bottom: 2%;
+  }
+
+  #onsdag_14{
+    margin-left: 3.5%;
+    margin-bottom: 2%;
+  }
+
+  /* Style for billeder */
+  #fredagsbar{
+    max-width: 70%;
+    margin-left: 3.5%;
+  }
+
+  #talk-tamari {
+    max-width: 70%;
+    margin-left: 3.5%;
+  }
+
+  #talk-tamari2 {
+    max-width: 70%;
+    margin-left: 3.5%;
+  }
+
+  #projektcafe {
+    max-width: 70%;
+    margin-left: 3.5%;
+  }
+
+#omvisning{
+  max-width: 70%;
+  margin-left: 3.5%;
+}
+
+#gratis_omvisning{
+  max-width: 70%;
+  margin-left: 3.5%;
+}
+
+
+/* style flexbox */
+  .box.image-container{
+    height: auto;
+    width: auto;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+  /* ---- SLUT underside, BESØG OS ---- */
+/* ---- START - underside, UDSTILLINGER ----*/
+.overskrift-udstillinger {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.aktuelle-udstillinger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: none;
+}
+
+.aktuelle-udstillinger img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; 
+  margin-bottom: 10px; 
+  transition: opacity 0.3s ease;
+}
+
+.aktuelle-udstillinger img:hover {
+  opacity: 0.9;
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 1%;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  left: 0;
+  bottom: 2%;
+  padding: 1%; 
+  color: black; 
+  border: none;
+}
+
+.image-text h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.image-text p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+
+
+/* ---- SLUT underside, UDSTILLINGER ---- */
+
+
+/*---- START underside, PRESSE -----*/
+.pressebanner {
+  z-index: 1;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 10%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/*style for button Flexbox */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px; 
+  max-width: 400px;
+}
+
+/* styling af links */
+.link_style {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333; 
+  background-color: #ffffff; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: bolder;
+}
+
+.år {
+  margin-top: 50px;
+}
+
+/* hover presse links */
+.link_style:hover {
+  transition: all .6s ease-in-out;
+  opacity: 100%;
+  background-color: #3127C6;
+}
+
+/*  styles for search container Mobil */
+.search_container {
+  display: flex;
+  justify-content:center;
+  margin-top: 5%;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #3127C6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* ---- START - under ombygning ---- */
+.under-ombygning {
+  position: relative;
+  width: 100%;
+  top: 10%;
+  margin-top: 20%;
+  text-align: center;
+  margin-bottom: 5em;
+ }
+ 
+ .highlight {
+   color: #3127C6;
+ }
+ /*---- SLUT under-ombygning -----*/
+
+
+/* ---- START FOOTER ---- */
+.footer {
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer__text,
+.footer__link,
+.footer__title {
+  color: #000000;
+  padding: 3px 15px;
+  display: block;
+}
+
+.footer__hr {
+  height: 1px;
+  border: none;
+}
+
+.footer__sections {
+  display: flex;
+  align-content: end;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 15px 0;
+  flex-shrink: 0;
+}
+
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #3127C6;
+}
+
+/* Style for footer icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #000000;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #000000;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #000000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 1;
+  color: #3127C6;
+}
+/* ---- SLUT FOOTER ---- */
+
+
+
+/* ---- MEDIA QUERIES ---- */
+
+/* START Menu - navbar - media q */
+
+.main-nav.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.main-nav.show .line2 {
+  opacity: 0;
+}
+.main-nav.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.main-nav.show .nav-links {
+  transform: translateX(0%);
+}
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    width: 60%;
+
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 1023px) {
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #D3D3D3;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+ /* SlUT Menu, navbar - media q */
+
+
+  /* START besøg os - media q */
+  @media screen and (min-width: 1024px) {
+    h2 {
+      position: relative;
+      margin-left: 34%;
+      padding: 10px;
+    }
+    .split-line {
+      max-width: 100%;
+    }
+    
+    .overskrift_besøg_os {
+      margin-top: 2em;
+      font-size: 3em;
+      font-weight: lighter;
+    }
+    }
+    /* SLUT besøg os - media q */
+
+    /* START udstillinger - media q */
+
+    @media screen and (min-width: 1024px) {
+      .overskrift-udstillinger {
+        text-align: left;
+      }
+    }
+
+
+@media screen and (min-width: 800px){
+/* styling billeder, FORSIDE */
+.image-container-forside{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15.5%;
+}
+#udstillingsbillede_sort{
+  max-width: 100%;
+  }
+  
+  #udstillingsbillede_lilla{
+  max-width: 100%;
+  } 
+}
+
+/* START PRESSE - media q */
+
+@media screen and (min-width: 1024px) {
+  .link-container {
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    max-width: 800px;
+  }
+
+  .link_style {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333; 
+  background-color: #ffffff; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: bolder;
+  
+  }
+
+  .år {
+    flex-basis: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .kontakt {
+    font-size: 21px;
+    margin-top: 50px;
+  }
+
+  .pressebanner {
+    margin-top: 50px;
+  }
+
+    /* Desktop style for søgfunktion */
+
+    .search_container {
+     display: flex;
+     flex-direction: row;
+     justify-content: left;
+     width: 600px;
+     margin-right: 195px;
+     
+    }
+  
+    .search-bar {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+  
+    .search-button {
+      padding: 10px;
+      background-color: #3127C6;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+}
+/* SLUT PRESSE - media q */
+
+ /* START footer - media q */
+@media screen and (max-width: 800px) {
+  .nav-links {
+    width: 60%;
+  }
+  .footer__section { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__section { width: 100%; }
+}
+/* SLUT footer - media q */
